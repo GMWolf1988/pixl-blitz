@@ -33,7 +33,7 @@ function animate() {
 
         const dist = Math.hypot(player.x - enemy.x, player.y - enemy.y)
 
-        // End game.
+        // End the game once enemey collides with player.
         if (dist - enemy.radius - player.radius < 1 ){
             cancelAnimationFrame(animationId)
             modalUpdate.style.display = "flex"
